@@ -1,0 +1,174 @@
+There are many types of loops that we can use in Java:
+
+1. For. Cantidad fija. 100 veces
+2. For-each. Secuencia o un lugar donde iterar
+3. While. Cuando no sabemos cuando termina nuestro programa. 
+4. Do-while. Validación 
+
+9.1 For
+The syntax used in a for loop looks like the following:
+
+for(initialization, condition, update){
+	statement(s)
+}
+
+Example:
+for(int i = 1; i <= 10; i ++){
+	System.out.println(i);
+}
+
+Example 2: 
+
+for(int i = 1; i <= 10; i += 2){
+	System.out.println(i);
+}
+
+Example 3: 
+
+for(int i = 11; i > 0; i--){
+	System.out.println(i);
+}
+
+9.2 For-each
+Similarly to the for loop, we can use a for-each loop to iterate over elements on a sequence or list.
+The syntax to use a for-each loop is the following:
+
+for(iterator_variable : sequence){
+	statement(s)
+}
+Example: 
+int[] totalGoals = {43, 71, 28, 55, 51, 89, 55, 29};
+
+for(int goal: totalGoals){
+	System.out.println(goal);
+}
+
+Notice: In this for-each loop, we are iterating over elements rather than indices.
+
+
+9.3 While loop
+Another kind of loop that is similar to the for loop. The syntax of a loop looks like this:
+
+variable to be evaluated in condition.
+while(condition){
+	statement(s)
+	update of variable that meets condition
+}
+
+Example 1. 
+
+int i = 0;
+
+while (i < 5){
+	System.out.println(i);
+	i++;
+}
+
+9.4 Do while
+The main difference between a while and a do while is that the core in the do-while is executed at least once.
+
+do {
+	statement(s)
+	update of variable that meets condition
+} while(condition);
+
+Example: Ask for a number to the user until we get a negative number.
+
+9.5 Break and continue
+There is a keyword in Java called break that help us go out completely from a loop.
+
+Example.
+for(int i = 1; i <= 10; i++){
+	if(i == 5) break;
+	System.out.println(i + " ");
+}
+
+Similarly to the break, we have continue, which let us continue with the code and does not do the statements after that.
+
+for(int i = 1; i <= 10; i++){
+	if(i == 5) continue;
+	System.out.println(i + " ");
+}
+
+9.6 Infinite loop
+Notice that we need a variable to update our condition, otherwise we will have an infinite loop.
+
+Example.
+
+int n = 0;
+while(n < 10){
+	System.out.println(This is an infinite loop);
+}
+
+9.7 Nested loops
+Let's loop at an example that will help us understand the importance of a nested loop.
+
+Example: Create a multiplication table.
+
+
+Exercises.
+ 1. Print numbers from 1 to 10.
+
+ 2. Print numbers form 10 to 1.
+
+ 3. Print the first ten odd numbers.
+
+ 4. Print the multiplication table with 7.
+
+ 5. Given the following numbers, print if the number is even or odd: 8, 7, 5, 1, 3, 4.
+
+ 6. Given the following scores, print their average: 8.3, 7.9, 5.7, 10, 9.1.
+
+ 7. Determine the divisors of a number.
+
+ 8. Determine if a number is prime.
+
+ 9. Given two sorted arrays, find the elements of the intersection between them.
+ *Example 1:*
+ $ a = [1, 2, 2, 4, 5],  b = [0, 2, 2, 4, 4, 4, 6, 9]$
+ **The intersection is $[2, 4]$**
+ * [2, 2, 4, 4, 4]
+
+ *Example 2:*
+ $ a = [4, 6, 8], b = [5, 7, 9]$
+ **The intersection is $[]$**
+
+ 10. Make a "game" that determines if a user has guessed a number between 1 and 100.
+ For this exercise we will follow the next steps:
+ a) A game that ask the user for a number and the game only responds whether you are right or not.
+ b) Give some hints to the user, so he can determine if the given number is greater or less than the number to guess.
+ c) Set the number to guess as a random number.
+ d) Give only 6 chances to the user to guess the number.
+
+EXTRA EXERCISES:
+Print the following pyramides:
+
+1.
+
+****
+***w
+**ww
+*www
+
+2. 
+*
+**
+***
+****
+
+3. 
+www* 
+ww** 
+w*** 
+****
+
+4.
+**** 
+ *** 
+  ** 
+   *
+
+
+
+
+

@@ -1,0 +1,60 @@
+We can use an ArrayList when we have little insertions and deletions and many accessing to the elements. 
+
+And the difference between an ArrayList and a VectorList is that the second is used when we are using multi-threading. 
+
+Also, another important feature is that we can have duplicate elements.
+
+2.1 Useful methods of ArrayList
+
+2.1.1 The add() method
+We can add an element at the end of the list, or in a specific position.
+
+wordArrayList.add("elephant");
+wordArrayList.add(2, "ball");
+
+2.1.2 The addAll() method
+We can pass a complete colletion to the ArrayList.
+
+List<String> newList = List.of("yen", "zebra");
+wordArrayList.addAll(newList);
+
+2.1.3 The set() method
+Is used to change an element in a specific position.
+
+wordArrayList.set(6, "Fish");
+
+2.1.4 The remove() method
+We can use this method to remove an element in a specific position or by specifying the element.
+
+wordArrayList.remove(2)
+wordArrayList.remove("cat")
+
+2.2 Iterating over the elements
+There are three ways to iterate over the elements in an ArrayList.
+
+for(int i = 0; i < words.size(); i++){
+	System.out.println(words.get(i));
+}
+
+for(String word: words{
+	System.out.println(word);
+}
+
+The third way is to create an Iterator
+Iterator wordsIterator = words.iterator();
+
+while(wordsIterator.hasNext()){
+	System.out.println(wordsIterator.next());
+}
+
+The best way to delete an element is using an iterator.
+
+2.3 Sorting an ArrayList
+If we want to sort an ArrayList we can use a static method of the Collection class and pass the ArrayList as a parameter.
+
+List<Integer> numbersAl = new ArrayList<>(numbers);
+
+Collections.sort(numbersAl)
+
+2.4 Creating a Comparable implementation
+We have to implement the Comparable interface and change the method compareTo.

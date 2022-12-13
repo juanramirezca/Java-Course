@@ -1,0 +1,21 @@
+In a set collection, we cannot have duplicate elements. Also there is not positional access in sets.
+
+Let's see an example of how we can create an immutable set in Java.
+
+Set<String> set = Set.of("Apple", "Banana", "Cantaloupe")
+
+If we would like to modify the elements we have three different options.
+
+3.1 Hashset
+When using a hashset there is no order neither in the way we insert the elements, or in relation with the other elements.
+
+Set <String> hashset = new HashSet<>(set)
+
+hashset.add("Dog");
+
+3.2 LinkedHashSet
+When we use this data structure, we have an order according to the way we insert the elements.
+
+
+3.3 TreeSet
+When using a TreeSet, the elements are stored in a sorted way.

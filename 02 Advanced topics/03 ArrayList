@@ -1,0 +1,20 @@
+An ArrayList is a data structure used to store elemens, and it can increase or decrease the size dinamically.
+
+To use this data structure in Java we have to import it.
+
+import java.util.ArrayList;
+
+ArrayList<Type> arrayList = new ArrayList<>()
+
+3.1 Adding a new element
+
+arrayList.add()
+
+3.2 Deleting an element
+
+arrayList.remove(element)
+arrayList.remove(index)
+
+3.3 Size of array
+
+arrayList.size()

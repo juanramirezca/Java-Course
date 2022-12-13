@@ -1,0 +1,15 @@
+04 Getters
+A getter is a way to access to the information of a class. Let's add the getter to the previous example.
+
+public class Student {
+	
+	private String name;
+
+	void setName(String name){
+		this.name = name;
+	}
+
+	String getName(){
+		return this.name;
+	}
+}

@@ -1,0 +1,21 @@
+The queue is used when we have to process some information in the order is presented to us. For instance a to-do list.
+
+Let's see an example of a queue.
+
+Queue<String> queue = new PriorityQueue<>();
+
+5.1 poll()
+This method is used to get elements from the queue.
+
+queue.poll();
+
+5.2 offer()
+This method is used to insert an element to the queue.
+
+queue.offer("apple");
+
+5.3 addAll()
+We can use this method when we want to insert many elements to the queue.
+
+queue.addAll(List.of("Zebra", "Monkey", "Papagayo"));
+

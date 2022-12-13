@@ -1,0 +1,40 @@
+There are some methods that can be used in a TreeSet that make this data structure unique and different from the HashSet and the LinkedHashSet.
+
+Let's see the methods with an example. First we can create a TreeSet with some elements.
+
+TreeSet <Integer> numbers = new TreeSet<>(Set.of(65, 67, 21, 11, 54, 1));
+
+4.1 floor() method
+We can use this method to see an element lower than a specific parameter. This method is inclusive.
+
+numbers.floor(40);
+
+4.2 lower() method
+This method specifically returns an element lower than a given parameter.
+
+numbers.lower(34);
+
+4.3 ceiling() method
+Likewise the floor() method, this method return an element greater or equal than a given number
+
+numbers.ceiling(36);
+
+4.4 higher() method
+Similar to lower(), but with a greater element
+
+numbers.higher(36);
+
+4.5 subSet() method
+Given two parameters, returns a subset of the TreeSet.
+
+numbers.subSet(20,80);
+
+4.6 headSet() method
+Returns the first elements of the set until the given parameter.
+
+numbers.headSet(50);
+
+4.7 tailSet() method
+Returns the last elements of the set until the given parameter.
+
+numbers.tailSet(50);

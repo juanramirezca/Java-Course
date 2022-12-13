@@ -1,0 +1,80 @@
+An executor service helps us to manage the way the threads will be executed.
+
+Here's an example of how we can use an executor service
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorServiceRunner {
+	public static void main(String[] args){
+		ExecutorService executor = Executors.newSingleThreadExecutor();
+		executor.execute(new Task1());
+		executor.execute(new Thread(new Task2()));
+
+		executor.shutDown() 
+
+	}
+}
+
+With the previous code, we can have only one thread executing at a time.
+
+Notice that the method shutDown() is necessary, otherwise our program will continue running.
+
+
+2.1 Mutliple threads
+We can specify the amounts of threads that we want to be executed at the same time. 
+We will continue using the previous code, but with a small change. 
+
+public class ExecutorServiceRunner {
+	public static void main(String[] args){
+		ExecutorService executor = Executors.newFixedThreadPool(2);
+		executor.execute(new Task1());
+		executor.execute(new Thread(new Task2()));
+
+		executor.shutDown() 
+
+	}
+}
+
+2.2 Returning a future
+We can implement a class that returns a value. For that, we must use the Interface Callable. 
+
+import java.util.concurrent.Callable;
+
+class CallableTask implements Callable<String> {
+	
+	private String name;
+
+	public CallableTask(String name){
+		This.name = name;
+	}
+
+	@Override
+	public String call() throws Exception {
+		Thread.sleep(1000);
+		return "Hello" + name;
+	}
+	
+}
+
+public class CallableRunner {
+	public static void main (String[] args){
+		ExecutorService executor = Executors.newFixedThreadPool(1);
+		Future <String> welcomeFuture = executorService.submit(new CallableTask("Welcome, Future!"));
+
+		System.out.println(welcomeFuture.get());
+
+		executor.shutDown() 
+	}
+}
+
+We can look the Future as a promise of a return value.
+
+
+
+
+
+
+
+
+

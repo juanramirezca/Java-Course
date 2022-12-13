@@ -1,0 +1,94 @@
+In Java there is a class called String and we can have instances of that class.
+
+For instance:
+
+String str1 = "Test"
+
+12.1 Useful functions
+There are some useful functions in this class that can help us perform some specific tasks.
+
+12.1.1 charAt()
+This method returns the indice of a character within a String.
+
+Examples:
+
+str1.charAt(0);
+str1.charAt(3);
+str1.charAt(4);
+
+12.1.2 substring()
+This method returns a sub string of a given string.
+
+String longString = "This is a long string"
+
+Examples: 
+longString.substring(5);
+longString.substring(5,13);
+
+12.1.3 length()
+This method returns the total of characters that there are in a string.
+
+longString.length();
+
+12.1.4 indexOf()
+Returns de index of a character within a string
+
+str1.indexOf('T');
+str1.indexOf('i');
+
+12.1.5 contains()
+This is a method that let us know if a substring is in a string. If it is in the strings returns true, otherwise returns false.
+
+str1.contains("Te");
+
+12.1.6 isEmpty()
+The method returns true if a string is empty, otherwise returns false.
+
+int str = "";
+str1.isEmpty();
+str.isEmpty();
+
+
+12.1.7 equals()
+A method that returns true if two strings are the same, otherwise it returns a false.
+
+int newStr = " ";
+
+newStr.equals(str);
+
+12.2 Concatenation
+There are two ways to concatenate strings in Java.
+One is by using the '+' operator.
+And the other is with the method concat()
+
+Examples:
+"1" + "2"
+
+"2".concat("3")
+
+12.3 More methods.
+If we would like to see a list of all the methods that the class String have we can use the dot notation follow by the tab button.
+
+Example.
+String st = "";
+st.<tab>
+
+12.4 Jata String Alternatives
+There are two classes alternatives to create strings in Java: StringBuffer and StringBuilder. We use them when we want multiple instances of a String.
+
+12.4.1 StringBuffer
+Another class used in Java to create String. The main difference is that StringBuffer is mutable, while the String class is immutable.
+We use StringBuffer when we are talking about threading
+
+Example
+StringBuffer sb = new StringBuffer("Test");
+sb.append(" #2")
+
+12.4.2 StringBuilder
+Another class used to create instances of a String. 
+
+StringBuilder sb = new StringBuilder("test1");
+
+
+
+

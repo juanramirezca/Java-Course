@@ -1,0 +1,131 @@
+Threads allow you to run all the task in parallel. For instance, if we have three task, we can have three threads running each task at the same task.
+
+Example.
+
+//task 1
+for(int i = 1; i <= 99; i++){
+	System.out.print(i + " ")
+}
+//task 2
+for(int i = 1; i <= 99; i++){
+	System.out.print(i + " ")
+}
+
+//task 3
+for(int i = 1; i <= 99; i++){
+	System.out.print(i + " ")
+}
+
+With parallelism, we can increase the utilization of the CPU. 
+
+1.1 Creation of Threads.
+There are two ways of creating threads in Java:
+
+1.1.1 Using the class Thread
+Let's see an example of how to use the class Thread in Java
+
+class Task extends Thread {
+	public void run(){
+	//task 
+	}
+}
+
+public class ThreadBasicsRunner {
+	public static void main(String[] args){
+	Task task = new Task1();
+	task.start();
+	}
+}
+
+Notice we are using the method start instead of run. If we would use the run method, it would be running as if we did not use the Thread class.
+
+
+1.1.2 Using the interface Runnable
+Now, let's see an example of how to implement using the inferface Runnable
+
+class Task implements Runnable {
+	public void run(){
+		//Task
+	}
+}
+
+public class ThreadBasicsRunner {
+	public static void main(String[] args){
+	Task task = new Task1();
+	Thread thread = new Thread(task);
+	thread.start();
+	}
+}
+
+1.2 States of a Thread
+There a multiple states of a thread: new, runnable, running, blocked, waiting, terminated or dead.
+
+1.2.1 New
+We say a thread is new when we create an instance of the class, but we have not executed yet.
+
+Example: 
+1. Using the Thread class
+Task task = new Task();
+
+2. Using the Runnable interface
+Task task = new Task1();
+Thread thread = new Thread(task);
+
+1.2.2 Terminated or dead
+A thread is in terminated state when the execution is completed. 
+
+1.2.3 Running
+A thread is in running state when it is executing a piece of code. 
+
+1.2.4 Runnable
+A thread is in a runnable state when is ready to execute a piece of code, but other thread is running.
+
+1.2.5 Blocked or Waiting
+A thread is blocked or waiting when it's waiting for an external process to respond. 
+
+1.3 setPriority() method
+This method changes the priority of the thread. Usually a thread can have three priorities: MIN_PRIORITY (1), NORM_PRIORITY(5), or MAX_PRIORITY(10).
+
+Task task = new Task();
+task.setPriority(10)
+task.start();
+
+Keep in mind that the priority is a request, not an order.
+
+1.4 Communication between threads
+
+1.4.1 The join() method
+We can use this method to force a task to be completed before another thread starts to run. For instance,
+
+task.join()
+
+Adittionally, we have to add in the main where the threads are running an exception.
+
+public class ThreadBasicsRunner {
+	public static void main(String[] args) throws InterruptedException {
+	
+	//Tasks running.
+	task.join()
+
+	}
+}
+
+1.4.2 The sleep() method
+We can use this method to pause the execution of a thread for a given time.
+
+Thread.sleep(10000);
+
+1.4.3 The yield() method
+A hint to the scheduler that the current thread is willing to yield its current use of a processor. 
+
+Thread.yield()
+
+1.5 The synchronized keyword
+There are many methods where this keyword is used, and this means that if a piece of code that has this word in the method is executed by two threads, then only one thread can access at a time; the second thread has to wait until the first one has completed the execution. 
+
+
+
+
+
+
+

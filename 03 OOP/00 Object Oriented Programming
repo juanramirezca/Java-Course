@@ -1,0 +1,25 @@
+In Object Oriented Programming, we have to think in terms of objects. This is, we have to think of the object that compose our problem. 
+
+In each object we can identify, we will have
+* data (type, color, position, etc.) atributos adverbios
+* actions or behaviour (walk(), run(), hike(), etc.) verbos
+
+1. Computadora
+Atributos: Monitor, botones, entrada de puerto USB, Tamaño, Cámara
+Acciones: prender, apagar, suspender, subir, bajar 
+
+
+Paradigmas de programación 
+1. Programación Estructurada
+2. Programación Orientada a Objetos (POO o OOP) 
+3. Programación Funcional (Scala, Haskell)
+	f(x) = x + 3
+	g(x) = (f(x)) + 8
+4. Programación Orientada a negocios (COBOL)
+5. Programación ...
+
+Funcion1
+
+Instrucción 1
+Instrucción 2
+

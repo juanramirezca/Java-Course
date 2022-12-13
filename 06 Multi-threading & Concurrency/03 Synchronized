@@ -1,0 +1,58 @@
+There are some actions that are not atomic, and if we have two threads running at the same time, then an error can occur. 
+Let's see the following example.
+
+
+public void increment(){
+	i++;
+}
+
+This method is not thread-safe, which means that in case of two threads accessing at the same time, it could result in possible lost of information.
+
+This is because the increment is not atomic, because there are three steps when doing this increment: get the value of i, increment it's value, set the value to i. 
+
+To solve this problem, we can use the keyword synchronized:
+
+synchronized public void increment(){
+	i++;
+}
+
+3.1 Locks
+To implement a lock we can do the following code:
+
+import java.util.concurrent.locks.ReentrantLock;
+
+Lock lockForI = new ReentrantLock();
+
+public void increment(){
+	lockForI.lock();
+	i++;
+	lockForI.unlock();
+}
+
+And this way we do not need anymore the synchronized in the signature of the method.
+
+3.2 Atomic Classes
+The reason for using a lock is because the increment of a variable is not an atomic operation: involves three operations. But, there are classes that provide atomic operations.
+
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class AtomicInteger {
+	private AtomicInteger i = new AtomicInteger;
+
+	public void increment(){
+		i.incrementAndGet();
+	}
+}
+
+Now this piece of code is thread-safe.
+
+
+
+
+
+
+
+
+
+
+

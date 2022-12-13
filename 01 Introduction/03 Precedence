@@ -1,0 +1,66 @@
+In Math there are hierarchy of operations called precedence, and it's used also in Java.
+
+1. Parentheses
+2. Exponentiation
+3. Multiplication, division and modulus
+4. Addition and substraction
+
+Examples:
+
+1. (8 + 3) * 4 
+ 	11 * 4
+ 	= 44
+
+2. 12 + 8^2
+	12 + 64
+	= 76
+
+3. 4 + 5 * 8 = 9 * 8 = 72
+ 	4 + 40
+ 	44
+
+
+4. 4 + 2 - 1 + 3
+ = 6 - 1 + 3
+ = 5 + 3
+ = 8
+
+
+
+5. 8 * 4 / 2 * 1 % 2
+ = 32 / 2 * 1 % 2
+ = 16 * 1 % 2
+ = 16 % 2
+ = 0
+
+
+
+Exercises:
+1. 8 + 2 * 5
+ = 8 + 10 = 18
+
+
+2. (8 + 2) * 5
+= 10 * 5 = 50
+
+
+
+3. 12 + 9 / 3
+= 12 + 3 = 15
+
+
+4. (12 + 9) / 3
+= 21 / 3 = 7
+
+
+
+5. 12 + (9 / 3)
+= 12 + 3 = 15
+
+
+6. 8 * 5 / 2 * 5
+= 40 / 2 * 5
+= 20 * 5 
+= 100
+
+

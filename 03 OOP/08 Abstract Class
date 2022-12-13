@@ -1,0 +1,21 @@
+Usually when we create a class, we provide the implementation of each method. In an Abstract class we do not  do this, that is we just leave the method declaration empty.
+
+Example
+
+abstract class AbstractAnimal {
+	abstract public void bark();
+}
+
+Then, the sub-classes are the ones who implement the corresponding methods. 
+
+class Dog extendes AbstractAnimal {
+	public void bark(){
+		System.out.println("Guau!")
+	}
+}
+
+And now we can create an instance from the sub-class, but not from the abstract class. That means, we cannot create an instance of an abstract class.
+
+Also an abstract class can extend from another abstract class. 
+
+Exercise. Make a Figure Abstract class and then a Triangle and Square classes that extends from this figure class.

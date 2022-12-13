@@ -1,0 +1,22 @@
+A wrapper class encloses(wraps) around a data type and gives it an object appearance.
+The wrapper classes are final and immutable.
+
+Types:
+* Wrapper: Boolean, Byte, Character, Double, Float, Integer, Long, Short.
+* Primitive: boolean, byte, char, double, float, int, long, short.
+
+The wrapper classes are useful because they provide us different methods.
+
+1. Creation from other data types
+Integer hundred = Integer.valueOf("100");
+Boolean value = Boolean.valueOf("True");
+
+There is also another way to create an instace of this class:
+Integer i1 = new Integer(100);
+
+The difference is that the valueOf method does not create another object if there exist one that has the same value.
+
+2. Auto boxing
+Uses the method valueOf() in the background to create an instace of a class.
+
+Integer seven 7;

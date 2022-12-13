@@ -1,0 +1,89 @@
+00 Exchange House Project
+
+## 1. Description
+
+This project is a workflow simulation of an exchange house, where there will be different currencies, amount to be exchanged, and exchange rate. Also, as new topics of the course are seen, new features will be added to the code to improve it. At the end, a complete, intuitive, and robust program that executes a simulation will be achieved.
+
+## 2. Objective
+1. Given different currencies, an amount to be exchanged and the exchange rate, the objective is to simulate the conversion between currencies. 
+2. Make an intuitive, complete, and real program that simulates the workflow of an exchange house.
+
+## 3. Functionalities
+This project must perform different tasks and those will be explained in a depth way in the following sections:
+1. Convert from a currency to another.
+2. Convert from a currency to another and vice versa.
+3. Given information from the user, perform any amount of a currency conversion.
+4. Make the program free from user mistakes.
+5. Improve the code with a modularization.
+6. Perform any amount of currency using a collection.
+7. Perform any amount of currency using a data file.
+
+### 1. A simple currency conversion.
+* This first step will be developed after completing the "06 Variables" module of the course.
+* The objective of this step is to make a simple currency exchange. For example, *change from dollars to Mexican pesos. *
+* The currencies, the amount to be exchanged, and the exchange rate are **fixed**.
+
+An amount to be exchanged and the exchange rate
+USD -> MXN
+153 dolares
+19.93
+
+int amount = 153;
+float exchangeRate = 19.93f;
+System.out.println("You gave me " + amount + "USD and you will receive $" + amount * exchangeRate);
+
+# Place your code here. Use functions to separate the different actions in our code.
+
+### 2. A two-way currency conversion.
+* This step will be developed after completing the module ** 08 Conditionals** of the course.
+* The objective of this step is to make an exchange from a currency to another and vice versa. 
+* For example, *convert from mexican pesos to dollars and also from dollars to mexican pesos.*
+* An if statement **MUST** be used for this step.
+
+USD -> MXN
+MXN -> USD
+
+# Place your code here. Use functions to separate the different actions in our code.
+
+### 3. Given information from the user, make any amount of currency conversions
+* For this step, the previous code will be improved only after seeing the Scanner concept and "10 Loops" module.
+* The objective of this step is to perform *ANY* amount of currency conversion.
+* The conversion type, the amount, and the exchange rate **MUST** be provided by the user
+* A loop **MUST** be used.
+
+5
+USD -> MXN
+
+# Place your code here. Use functions to separate the different actions in our code.
+
+### 4. Do NOT let the user make mistakes
+* Additionally, a loop **MUST** be used to improve the previous code so that we prevent the user from making a mistake.
+* In other words, no further actions will be held if the user makes an error.
+
+# Place your code here. Use functions to separate the different actions in our code.
+
+
+### 5. Modularize the code
+* This step must be performed only after completing the module "11 Methods".
+* We MUST use functions in this step to modularize our code.
+
+# Place your code here. Use functions to separate the different actions in our code.
+
+### 6. Using collections
+* This step must be performed only after completing the Collections Topics.
+* In this step, we **MUST** use a collection to store multiple values to be processed instead of asking the user for all of them.
+
+USD (25, 23, 111, ...)
+
+# Place your code here. Use a collection to store information and process it.
+
+### 7. Using files
+* This step must be performed only after completing the file managment Concept.
+* In this step, we **MUST** use an additional file to store multiple entries with the corresponding values to be processed
+
+# Place your code here. Do not forget to create a new file!
+
+## 4. Further steps
+There are certain steps that can be performed that are beyond the scope of this course:
+1. Use a database to retrieve and store useful information.
+2. Make a graphical user interface to be used for this project.

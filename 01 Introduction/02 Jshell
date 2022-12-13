@@ -1,0 +1,21 @@
+We can use jshell from the command prompt on Windows or on the terminal in Mac.
+
+We just type: jshell to enter and /exit to exit the jshell.
+
+Let's see some examples of simple computations:
+
+5 + 3
+7 - 1
+5 * 5
+5 / 2
+9 % 2
+
+n % 2 == 0 => par
+n % 2 == 1 => impar
+
+
+Exercise 1. Calculate number of minutes in a day. R = 1440
+Exercise 2. Calculate number of hours in a week. R = 168
+Exercise 3. Calculate the sum of the first 10 numbers (1 + 2 + 3 + ... + 10). R = 55
+Exercise 4. Given a bill of $53.25 USD, obtain a tip of 15%.
+Exercise 5. From the previous example, obtain the total to pay (bill + tip).

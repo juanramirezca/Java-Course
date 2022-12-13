@@ -1,0 +1,46 @@
+Interview questions:
+
+#1 Given a string, determine the unique characters of that string.
+s = "Miguel Garza" ==> M, i, g, u, e, l, , G, a, r, z
+s = asistencia ==> a, s, i, t, e, n, c
+
+M
+i
+g
+u
+e
+l
+G
+a
+r
+z
+
+
+2. Is Unique: Implement an algorithm to determine if a string has all unique characters.
+s = "Miguel Garza" => False
+s1 = "murcielago" => True
+s2 = "!#$%&/()=?¡abcdefghijklmnñopqrstuvwxyzABCDEF" => True
+
+
+
+
+
+
+
+
+
+3. Implement a method to perform basic string compression using the counts of repeated characters.
+Example.
+
+aabcccccaaa would become a2b1c5a3.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+List
+
+In a list we have the control of the position of every element: when adding a new element or deleting one.
+
+A easy way to create a list is with the static method call of. For instance, we can create a List of strings like this.
+
+List <String> words = List.of("Apple", "Bat", "Cat");
+
+1.1 Useful methods in a List
+There are many methods that we can use in a list, and we will see some of the most useful 
+
+1.1.1 The size() method
+We can use the size method to know the length of the list.
+Example: 
+
+words.size();
+
+1.1.2 The isEmpty() method
+This method returns true if the list is empty, otherwise it returns false.
+
+Example:
+words.isEmpty();
+
+1.1.3 The get() method
+We can use this method to obtain an element in a specific index.
+
+Example: 
+words.get(2)
+
+1.1.4 The contains() method
+This method let us know if an element is in the list or not. It returns true if it is present in the list, otherwise it returns false.
+
+Example: 
+words.contains("dog");
+
+1.1.5 The indexOf() method.
+To see the position of an element in the list. If the element is not present in the list it will return a -1.
+
+Example:
+words.indexOf("cat");
+words.indexOf("dog");
+
+1.2 Immutability
+The list is an immutable object in Java, which means that once we have created a list of this type we cannot add an element.
+
+However, we can three different options. We can create an ArrayList, a LinkedList or a VectorList. Now we can add elements. 
+
+Example: 
+List<String> wordArrayList = new ArrayList<String>(words);
+
+Likewise, we can create a LinkedList or a VectorList.
+
+
+
+
+

@@ -1,0 +1,155 @@
+Good and bad programmers cause Exceptions, but great programmers handle very well exceptions. 
+There are two keys when using exception handling: 1. friendly message to end user; 2. enough information to debug the problem. 
+
+
+1.1 Examples of Exceptions
+In this section, we will review some of the most commons exceptions and some examples that causes those exceptions to happen. 
+
+1.1.1 NullPointerException
+
+public class ExceptionHandlingRunner {
+	public static void main(String[] args){
+		String str = null;
+		str.length();
+	}
+
+}
+
+1.1.2 ArrayIndexOutOfBoundsException
+
+public class ExceptionHandlingRunner {
+	public static void main(String[] args){
+		int[] arr = {1,2,3};
+		int number = arr[3];
+	}
+
+}
+
+1.1.3 InterruptedException
+
+public class ExceptionHandlingRunner {
+	public static void main(String[] args){
+		Thread.sleep(2000);
+	}
+
+}
+
+1.2 Basics of Handling
+The first we can see to manage this situation is using a try-catch
+
+try{ 
+	String str = null;
+	str.length();
+} catch (Exception ex){
+	ex.printStackTrace();
+}
+
+1.3 Handling NullPointerException
+There are differents exceptions and each of them inherite from a super class. Therefore, we can handle every specific exception. For instance, the previous code can be changed to the following. 
+
+try{ 
+	String str = null;
+	str.length();
+} catch (NullPointerException ex){
+	ex.printStackTrace();
+} catch (Exception ex){
+	ex.printStackTrace();
+}
+
+Depending on the type of the exception, the specific thing will be handled.
+
+1.4 Finally
+We use finally to make sure that all objects that were created are closed. 
+
+
+Scanner scanner = null;
+try {
+	scanner = new Scanner(System.in);
+	int[] numbers = {1,2,3,4,5};
+	int number = numbers[21];
+
+} catch (Exception e){
+	e.printStackTrace();
+} finally {
+	if(scanner != null) scanner.close();
+}
+
+There are only two cases where the finally is no executed:
+1. When there's a statement before the object could be closed properly.
+2. Using the System.exit()
+
+We can have a try without a catch, but we cannot have a try without a catch or a finally. 
+
+1.5 Exception Hierarchy
+There are two main classes in the Exception Hierarchy: Error and Exception, that extends from Throwable.
+
+An Error can be prevented but not handled (StackOverFlow). An exception are things that programmers may be able to handle.
+
+class Error extends Throwable { }
+class Exception extends Throwable { }
+class InterruptedException extends Exception { }
+class RuntimeException extends Exception { }
+class NullPointerException extends RuntimeException { }
+
+
+Throwable -> Error
+		  -> Exception -> InterruptedException
+		  			   -> RuntimeException -> NullPointerException
+
+When talking about Exceptions in general, there are two types: RuntimeException (Unchecked Exceptions) and subclasses, and those that are NOT RuntimeException (Checked Exceptions).
+
+The checked exceptions are risky and should be either handled or throw an exception.
+
+Note: If we have multiple exceptions, we have to handle the sub-classes first, then the super class.
+Example:
+
+try {
+	AmountAdder.addAmounts(new Amount("USD", 5), new Amount("EUR", 5));
+	String str = null;
+	string.toString();
+} catch (CurrenciesDoNotMatchException e){
+	System.out.println("Handled Currencies");
+} catch (Exception e){
+	System.out.println("Handled Exception");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

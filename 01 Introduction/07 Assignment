@@ -1,0 +1,51 @@
+In Java when we want to assign a value to a variable, we do something like this.
+
+int x = 10;
+
+Notice that is different that in maths. Because we are assigning or storing the value 10 to the variable x.
+
+Now, suppose we want assign a new value to the variable x.
+
+x = 15;
+
+This means that x does not have the value of 10 anymore, and now the value is 15.
+
+7.1 Increment and decrement
+We can increment our value or decrement doing something like this
+
+x = x + 1
+
+And now the value of x will be 16.
+
+Another ways of doing the same thing is the following.
+
+x++
+x += 1
+
+Likewise, we can decrement with the following statements. For instace, if y = 3
+
+y = y - 1
+y--
+y -= 1
+
+The result of these three sentences will be the same: y = 2.
+
+7.2 Coding debugging exercises
+1. 
+int x, y;
+x = 7
+y = x++
+
+What are the values of y and x after this two lines of code?
+
+2. 
+int x, y;
+x = 7
+y = ++x
+What are the values of y and x after this two lines of code?
+
+3. 
+int x, y;
+x = 7
+y += ++x
+What are the values of y and x after this two lines of code?

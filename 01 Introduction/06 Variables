@@ -1,0 +1,67 @@
+We can use a variable to store values. And the way to declare a variable in Java is the following
+
+<type of variable> <name of variable> = value.
+
+int number = 10;
+
+This process is called *declaration*
+
+And we can change the value of the variable number.
+
+number = 15;
+
+And this is called *assignment*
+
+Exercise. Create three integer variables called sc1, sc2, sc3 and then compute the mean of them.
+
+6.1 Naming a Variable
+* We can only use a combination of letters, numbers, $, and underscore(_)
+* Cannot start with a number
+* Cannot be a keyword (Int, System, etc.)
+* Usually camelCase 
+* Use a meaningful name for the variable
+
+6.2 Variables types
+
+* byte b = 5 -> 8 bits (1 byte)
+* short s = 238 -> 16 bits (2 bytes) 
+* int i = 4000 -> 32 bits (4 bytes)
+* long l = 2222223 -> 64 bits (8 bytes)
+
+All of these previous examples represent numbers without decimal part. Now, we will see types that can be used when we want to 
+represent a number with decimal part.
+
+
+* float f = 4.0f -> 32 bits (4 bytes), but not very precise.
+* double d = 67.0 -> 64 bits (8 bytes)
+
+BIG decimal
+
+* char c = 'F' -> 16 bits
+* boolean isTrue = false -> true or false
+
+6.3 Exercises
+
+1. Compute the area of a triangle of base 10 cm and height 15 cm. 
+
+2. Compute the area of a circle of radius 5.
+Area = π * r ^ 2
+
+3. Compute the average of three scores: 8.5, 7.2, and 9.3
+
+4. Given celsius degrees, convert from celsius to fahrenheit
+Fahr = 9/5 * Celsius + 32
+
+6.4 Homework
+ 1. A group of three friends go out to dinner and the bill to pay is $213.50 USD, if they decide to leave a tip of %15.
+ a) How much will the tip be? tip = 26.23 USD
+ b) How much will they need to pay in total (bill + tip)?
+ c) How much should each of them pay?
+ 
+ 2. John's salary is $87,500 USD / year, and his employer told him we will receive a Christmas bonus of a month's salary.
+ a) How much money will John earn for Christmas bonus?
+ b) How much mony will John recieve after a year working? (salary + Christmas bonus)
+
+
+
+

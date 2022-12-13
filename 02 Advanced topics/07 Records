@@ -1,0 +1,61 @@
+07 Records
+When we are defining a class, we have a lot of attributes and methods (setters and getters, toString, hashCode, etc.). We want to eliminate that verbosity creating a Java Bean.
+
+Therefore, when we create a Java Bean the public accessor method, constructor, equals, hashcode and toString are automatically created.
+
+Example.
+public class RecordsRunner{
+
+	record Person(String name, String email, String phoneNumber){
+
+	}
+	
+	public static void main(String[] args){
+		Person person = new Person("Juan", "juan.ramirez@gmail.com", "2223584838");
+		Person person2 = new Person("Pedro", "pedro.perez@gmail.com", "5522284838");
+		System.out.println(person);
+		System.out.println(person.equals(person2));
+	}
+
+}
+7.1 Adding defined methods.
+We can also add defined methods. For instance, we could create a constructor. 
+
+	record Person(String name, String email, String phoneNumber){
+		Person(String name, String email, String phoneNumber){
+			if(name == null) throw new IllegalArgumentException("Name is null");
+			this.name = name;
+			this.email = email;
+			this.phone = phone;
+		}
+
+	}
+
+7.2 Compact Constructor
+We do not need to use all the attributes in the previous example, we could just add the required validation. Example: 
+
+	record Person(String name, String email, String phoneNumber){
+		Person {
+			if(name == null) throw new IllegalArgumentException("Name is null");
+		}
+	}
+
+Notice that Compact Constructor are only allowed in Records
+
+7.3 Static fields, initializers, and methods.
+We can add static fields, static initializers, and static methods, but we CANNOT add instance variables or instances initializers.
+
+
+	record Person(String name, String email, String phoneNumber){
+		Person {
+			if(name == null) throw new IllegalArgumentException("Name is null");
+		}
+	}
+	
+	public String name(){
+		System.out.println("Do something");
+		return name;
+	}
+
+
+

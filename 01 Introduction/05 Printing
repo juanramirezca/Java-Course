@@ -1,0 +1,29 @@
+As we said in the previous module, we can use the following instruction to print out information:
+
+System.out.println()
+
+Now, we will see some extra features that we can use when printing.
+
+If we would like to have two words in different lines, we can do something like this:
+
+System.out.println("hello \n world")
+
+Likewise, we can use a tab between words.
+
+For instance: 
+System.out.println("hello \t world") // tab o tabulador
+
+Finally if we want to print special characters such as "" or \, we need to use an extra \
+
+System.out.println("hello \\ world")
+
+System.out.println("hello \" world")
+
+
+hello \ world \ !
+
+Exercises:
+1. Print in two different lines "Goodbye World".
+2. Print the following: "8 * 5 = 40" using a tabulator between the operation and the result.
+3. Display to the user the famous quote of Rene Descartes: "Cogito, ergo sum".
+

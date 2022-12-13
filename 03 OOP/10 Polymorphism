@@ -1,0 +1,3 @@
+The same code is having different behaviour depending on the class we are using and this is polymorphism.
+
+Exercise. Create an animal class that defines the method bark, and then create a dog and cat class which extends from this class with different implementation

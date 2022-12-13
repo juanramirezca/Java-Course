@@ -1,0 +1,25 @@
+A setter is a way from other class to access to the data inside of the class.
+And the way to do a setter is by using a method inside the class to access that data.
+
+We have also to change the modifier status of the data to "private".
+
+Example. 
+
+public class Student {
+	
+	private String name;
+
+	void setName(String name){
+		this.name = name;
+
+	}
+}
+
+Notice from the previous code that name is a local variable (usually passed by another class) and this.name refers to the class Student.
+
+
+
+Public class Main {
+ Psvm {
+	Student Miguel = new Student();
+	Miguel.setName("Miguel")

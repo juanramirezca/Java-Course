@@ -1,0 +1,34 @@
+How to install Java on Windows:
+
+1. 
+java jdk download
+https://www.oracle.com/java/technologies/downloads/#jdk19-windows
+Install x64_bin.
+
+2. Set path 
+1. Look for "Edit the system environment variables" > Advanced > "Environment Variables"
+2. In the System Variables, select the "Path" option and then clic on Edit... button.
+
+3. Clic on the new button and past the copied link of the java installed:
+C:\Program Files\Java\jdk-x\bin
+
+4. Move up and then clic ok and ok.
+
+5. Open Command prompt:
+Type java -version and jshell -version
+
+
+How to install Java on Mac:
+1. 
+java jdk download
+https://www.oracle.com/java/technologies/downloads/#jdk19-windows
+Install macOS Installer
+
+2. Follow the installer steps
+
+3. Launch terminal and type: java -version and jshell -version
+
+
+
+
+

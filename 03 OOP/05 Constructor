@@ -1,0 +1,11 @@
+A constructor is a special kind of method that allows us to set certain parameters when creating an instance.
+
+The constructor's name is the same as the class.
+
+public class Student {
+	private String name;
+
+	Student(String name){
+		this.name = name;
+	}
+}

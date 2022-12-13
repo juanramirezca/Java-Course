@@ -1,0 +1,154 @@
+JAVA CORE
+Inheritance:
+Encapsulation:
+Polymorphism:
+Class:  Template para crear objetos 
+Object: Es una instancia de una clase
+Override: 
+Overload: 
+Contructor:   
+Access modifiers: 
+public, default, protected, and private.
+Interface:  
+Abstract class:  
+Abstract method:  
+mutable object:  
+inmutable object: 
+diffrence between strignBuilder and strinBuffer: 
+Static keyword: 
+Final  keyword:  
+Exceptions: 
+Throwable: 
+Error:   
+Check exceptions:
+Uncheck exceptions:
+Exception structure:
+Collection framework:
+Diffrence between collention and collections in java:
+List:
+Set:
+Queue:
+Generics:pedro.garcia.loya
+
+JAVA 8  
+var type:
+Lambdas:  
+Functional interface:
+@FunctionalInterface:
+Default method:
+Stream API: 
+Supplier functional interface:
+Stream methods with supplier interface:
+Consumer functional interface:
+Stream methods with consumer interface:
+Operator functional interface:
+Stream methods with operator interface:
+Diffrence between stream and parallelStream:
+Method reference:
+Diffrence between map() and forEach() methods in stream API:
+Optional and exmaple:
+
+
+SOLID
+SINGLE RESPONSABILITY: 
+OPEN CLOSE: 
+Liskov:  
+Intefaz segregation:   
+Dependency inversion: 
+
+Spring boot:
+
+Spring Modules:
+
+Dependency Inyection:  
+Inversion Control:
+Application Context
+ORM:
+EntityManager:
+EntityManagerFactory:
+
+@SpringBootApplication:
+@Controller: 
+	@RequestMapping: 
+	@GetMapping @PutMapping @PostMapping @PatchMapping: 
+	@ResponseBody:  
+	@RequestBody: 
+	@PathVariable:  
+	@RequestParam: 
+	
+@Service:  
+@Repository:  
+@Entity: 
+@Component:  
+@Bean:
+
+
+Web Service:
+
+SOAP:
+Restful web services:
+
+Stateful: 
+Stateless: 
+
+JAX-WS:  
+JAX-RS: 
+
+MOCK INTERVIEW 2.0
+JRE and JDK:  
+
+heap and stack:  
+
+pass by value or pass by reference:  
+
+diffrence between strignBuilder and strinBuffer:  
+
+Reflection:  
+
+== and equals:  
+
+serialization:  
+
+priamry key and foreign key:  
+
+relationships in sql:  
+
+store procedure and function:  
+
+trigger:  
+
+inner join, outer join, left and right:  
+
+index:  
+
+Thread:   
+
+Process:   
+
+How to use thread:   
+
+What are the wait() and sleep() methods: 
+
+synchronized:
+
+starvation:  
+
+bottle neck:
+
+Spring scopes:
+
+Spring Security:  
+
+Authentication:  
+
+Authorization:  
+
+SecurityContext: 
+
+OAuth2:   
+
+HASHING: 
+ 
+JWT:
+
+CSRF ATTACK:

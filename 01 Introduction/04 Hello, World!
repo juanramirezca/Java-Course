@@ -1,0 +1,22 @@
+In Java to print, show or display information to the user, we can use the following instruction:
+
+System.out.print("Hello, World"); System.out.print("Hello, World"); System.out.print("Hello, World");
+
+For instance, if we want to display the solution of a computation like 3 * 4, we can do something like this: 
+
+System.out.println("3 * 4");
+
+"3 * 4"
+
+As you can notice for the first example, in Java we use "Strings" to represent a sequence of characters and we MUST surround our characters with double quotes.
+
+Exercises:
+1. Show to the user the following: "Goodbye, World!"
+2. Print the result of computing 8 * 5
+3. Print the result of computing 8 + 2 * 5
+4. Display the following string "8 * 5 = 40"
+5. Print the following: "The result is: " and then the result of 8 * 5.
+
+"7 * 9 = " ?
+
+TAB esta arriba de la tecla de MAYUS

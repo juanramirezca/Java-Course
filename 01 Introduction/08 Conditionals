@@ -1,0 +1,181 @@
+8.1 Relational Operators
+There are some operators called relational operators in Java used to do comparisons between operands. 
+
+bits => 0, 1
+
+Examples: 
+1. 7 == 7 V
+2. 7 != 7 F
+3. 7 > 9 F
+4. 7 < 9 V
+5. 5 >= 8 F
+
+p = "5 > 8" False OR
+q = "5 == 8" False 
+
+6. 5 <= 8 True
+
+p = "5 < 8" True OR
+q = "5 == 8" False 
+
+
+8.2 Truth tables
+
+Adriana 15
+
+p = "Adriana 15 es un hombre"? False
+q = "Adriana 15 es mayor de edad" False
+p && q = "Tienes que hacer el servicio militar" 
+False && False ==> False
+
+Orlando
+
+p = "Si tiene INE"? False
+q = "Si tiene Acta de nacimiento" False
+p || q = "Si tiene INE o Acta de nacimiento puede hacer tramite"
+False || False => False
+
+
+NOT
+p => !p => 
+!p => p
+
+ LOGICAL AND TABLE       LOGICAL OR TABLE
+
+ p | q | p && q            p | q | p || q
+ V | V |   V               V | V |    V
+ V | F |   F               V | F |    V
+ F | V |   F               V | V |    V
+ F | F |   F               F | F |    F
+
+8.3 Logical Operators
+The Logical Operators in Java are: and, or and not. To use these logical operators, we can use the following symbols: &&(and), ||(or), and !(not).
+
+Example. Determine if given a number is a valid score
+
+int score = -1;
+score >= 0 && score <= 10
+
+p = "score >= 0" F
+q = "score <= 10" T
+F && T ==> F
+
+
+num < 0 && num > 10
+{
+	sout("Calificacion no valida")
+}
+
+
+Likewise, the operators ||(or) and !(not) are used to perform similar conditions.
+
+8.4 Boolean expressions
+A condition always returns a boolean value.
+
+Example. Determine if a number is bigger than other.
+i = 10
+i > 5 -> False
+
+8.5 Conditional Statement
+
+The syntax of an if condition is simple
+
+if(condition){
+	statement(s);
+}
+
+Example 1. 
+int age = 18
+
+if (age >= 18){
+	System.out.println("Can vote")
+}
+
+8.6 Else statement
+We can determine the behaviour of our program depending if the condition is true or false. To do that, we can use an if-else statement.
+
+The syntax is similar
+
+if(condition){
+	true statement;
+} else {
+	false statement;
+}
+
+8.7 Nested if-else statement
+We can have multiple if-else statements and will look like this.
+
+weather = "solado"
+
+if(condition){
+	true statement;
+} else if (condition) {
+	true else if statement;
+} else if (condition) {
+	true else if statement;
+} else if (condition) {
+	true else if statement;
+} else if (condition) {
+	true else if statement;
+} else {
+	"Clima no valido por el momento"
+}
+
+Example 1. Determine if A is bigger than B or B is bigger than A
+
+int a = 8;
+int b = 7;
+
+if(a > b) System.out.println("A is bigger")
+else if (a == b) System.out.println("A is equal than B")
+else System.out.println("B is bigger than A")
+
+Exercise. Given three numbers, determine the biggest.
+A = 8
+B = 7
+C = 10
+
+
+And we can have as many as we want
+
+8.8 Ternary operation
+We can use a ternary operation to determine if a value is true or false.
+The syntax is the following
+
+condition ? true statement: false statement
+
+Example.
+int i = 10;
+
+(i % 2 == 0 ? "Even" : "Odd")
+
+(i % 2 == 0 ? true : false)
+
+
+Exercises.
+1. Given two numbers a and b, determine if a is smallest than b or not.
+
+2. Given a number, determine if that number is even or not.
+
+3. Given the age of a person, determine if is a teenager or not. (13 - 19)
+
+4. Given the weather of a city, propose a recommendation to the user.
+"Soleado" => Usar bloqueador
+"Lluvioso" => Usa un impermeable
+"Nublado" => Lleva un paraguas
+"Nevando" => Usa una chamarra y un sueter
+
+5. Determine if a number is divided by 3, by 5 or by both.
+nums = 9, 10, 15, 7.
+
+
+
+
+
+
+
+
+
+
+
+

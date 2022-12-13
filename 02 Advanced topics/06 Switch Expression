@@ -1,0 +1,28 @@
+Switch expression allows us to create expressions using switch statement. 
+It was released in JDK14.
+
+Example
+
+public class SwitchExpressionRunner {
+	
+	public static String findDayOfTheWeekWithSwitchExpression(int day){
+		String dayOfWeek = switch(day){
+			case 0 -> {
+				//Complex logic here.
+				yield "Sunday";
+			}
+			case 1 -> "Monday";
+			case 2 -> "Tuesday";
+			case 3 -> "Wednesday";
+			case 4 -> "Thursday";
+			default -> throw new IllegalArgumentException("Invalid Option" + day);
+		};
+		return dayOfWeek;
+	}
+
+	public static void main(String[] args){
+
+	}
+}
+
+Notice that you have to use the keyword "yield" to return a value. Also is important that there is no fallthrough.

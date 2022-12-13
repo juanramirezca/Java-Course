@@ -1,0 +1,26 @@
+Type Inference is one of the new features of Java 10, where the compiler infers the type of the variable at compile time.
+
+Example:
+//List <String> numbers = new ArrayList<>(list);
+var numbers = new ArrayList<>(list);
+
+We can make it immutable using the final keyword. 
+
+5.1 In loops
+We can used it in a loop
+
+Example:
+
+for(var = 1; var <= 10; var++){
+	//instruction
+}
+
+for(var num: numbers){
+	//instruction
+}
+
+5.2 Null value
+You cannot assign a null value to a var variable.
+
+5.3 Var is NOT a keyword
+Var is not a keyword, which means that you can use this word as a variable. 

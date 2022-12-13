@@ -1,0 +1,23 @@
+We can think of an interface like a gaming control of a console, which has different buttons, and depending the game we are doing different things.
+
+So, when we create an interface we are providing multiple implententations for the same thing.
+
+To create an interface we have to define the following definition
+
+public interface GamingControl {
+	moveUp();
+	moveDown();
+	moveLeft();
+	moveRight();
+}
+
+And we have to use the keyword implements to use an interface.
+
+It is also a way to communicate with other projects through the interface.
+
+Exercises.
+
+1. Make a gaming control for mario bros and mario kart.
+
+2. Create a complex algorithm and leave it to a collegue.
+

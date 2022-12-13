@@ -1,0 +1,26 @@
+We use inheritance when we have repeated code in two classes. 
+
+For instance, suppose we have the class Person that has the following attributes: name, last name, and email. And now we create another class Student,
+which has the exact same attributes and a couple of extra attributes.
+
+The problem is that if we want to change an attribute, we would have to modify two classes. To address this problem, we can use inheritance.
+
+When using *inheritance* we will have two classes:
+1. Parent class(or super class)
+2. Child class (or sub class).
+
+To use inheritance, we can use the keyword extends in the child class
+
+Example. 
+public class Student extends Person {
+	
+}
+
+In java there is NOT multiple inheritance.
+
+
+
+
+
+
+

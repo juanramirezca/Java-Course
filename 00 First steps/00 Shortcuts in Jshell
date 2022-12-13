@@ -1,0 +1,10 @@
+00 Shortcuts in Jshell
+* jshell => To open the jshell in a terminal or command prompt
+* /exit => To exit the jshell
+* /methods => To see all the methods that I have created
+* /save => to save all my methods in a txt file.
+> /save backup.txt
+* /edit => to edit a method
+> /edit sayHelloWorld
+* /list => displays the code of a class, method, or function.
+> /list Country

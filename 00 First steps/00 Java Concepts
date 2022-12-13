@@ -1,0 +1,81 @@
+00 Java Concepts
+1. Overload.- Creating two methods with the same name but with different parameters.
+
+2. JVM (Java Virtual Machine). runs Java bytecode
+
+3. JRE (Java Runtime Environment). JVM + Libraries + Other components
+
+4. JDK (Java Development Kit). JRE + Compilers + Debuggers.
+
+5. Encapsulation. Only the class should have access to the data inside the class. All the other class should only access the data through the methods. 
+
+Advantages of encapsulation.
+1. Do not expose the information.
+2. Prevent data from being wrong.
+
+6. Abstraction. Try to hide all the complexity of a class
+
+7. Object composition. We can have an object inside another object.
+
+8. Inheritance. One of the core concepts of OPP. Is a mechanism where we can derive a class from another class for a hierarchy of class that share a set of attributes and methods
+
+9. Overriding. When using a method from the super class, but modifying the parameters or the result.
+
+10. Abstract class. We use an abstract class when we want that some sub-class uses some defined methods, without taking care of the method itself. 
+We cannot create an instace of a subclass.
+
+11. Interface. The interface is another way of implementing abstraction. And is a contract between classes.
+
+12. Polymorphism. When the same piece of code has different behaviour depending the class we are using.
+
+Overload. The name is the same, but you must change the parameters. 
+
+
+13. Lambda expression. Is a shortcut method.
+
+14. Access Modifiers. There are multiple modifiers: 
+* Public. Can be used from anywhere, not only in the same package.
+* Protected. Can only be used in the same package or in sub-classes.
+* Default. Can only be used within the same package.
+* Private. Can only be accessed in the same class.
+
+For a class it can only be either public or default.
+For a method all the access modifiers can be used.
+
+15. Final Class. It cannot be extended further. We use this when we don't want someone to modify the properties of the class.
+
+16. Final method. The method cannot be overriden.
+
+17. Final variable & argument. It cannot be changed once a value is asigned to it.
+
+18. Static variable. We can use a static variable, when we want to share this variable between multiple instances.
+
+19. Static method. We can call a static method using the name of the class and not an instance.
+Static methos cannot use instance methods or variables.
+
+20. Static nested class. We can create an instace of a static nested class without creating an instance of the outter class.
+
+21. Anonymous Class. Any class that does not have a name is called an anonymus class. 
+
+22. Enum. We can use enum to restrict the user from using a non valid option for specific values.
+
+Finally 
+Finalized. 
+Final
+
+Exception and error
+
+Unhandle exceptions 
+
+Collections -> Utility class
+Collection -> Interface
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+02 Methods in Java
+
+A method is an action or behaviour of a particular class.
+
+The syntax of a method within a class looks like this.
+
+class Planet{
+	void revolve(){
+		System.out.println("Revolve");
+	}
+}
+
+To use the method of that class we have to create an object and then we can use the created method.
+
+Planet earth = new Planet()
+
+earth.revolve()

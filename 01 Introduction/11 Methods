@@ -1,0 +1,40 @@
+A function is a set of instructions to perform a specific task.
+The syntax of a function is the following
+
+<Return type> <Name of the function> (Parameter(s) (optional)){
+	Body of the function
+}
+
+If we don't want to return any type, the keyword used is "void". Example:
+
+void print_twice(String message){
+	System.out.println(message);
+	System.out.println(message);
+}
+
+To use this function we "call" (or invoke) the function by it's name. For instance.
+
+print_twice("Hello, there.")
+
+11.2 Multiple parameters
+
+11.3 Return type
+We can return different values from a function. All the types seen in section 06 Class.
+Example: Function that sums two numbers
+
+int sumOfTwoNumbers(int firstNum, int secondNum){
+	int sum = firstNum + secondNum;
+	return sum;
+}
+
+
+Exercises.
+1. Create a function that given a name, prints the following "Hello <name>"
+
+2. Create a function that given two numbers, it returns the max number of them.
+
+3. Create a function that given three scores, prints the average of them.
+
+4. Given a number n, create a function that prints a number between 1 and n.
+
+5. Create a function to print any multiplication table between 1 and 12

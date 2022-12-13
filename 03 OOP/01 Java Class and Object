@@ -1,0 +1,21 @@
+A class is a template where we can create multiple instances called objects. 
+
+Defines a data and contains methods, 
+which perform actions in the class.
+
+The syntax to create a class in Java is the following:
+
+class Country {
+	
+}
+
+And now we can create a instances of this class.
+
+Country mexico = new Country()
+
+Notice that now "mexico" is an object of the class
+
+Exercises
+1. Create a new class called Planet, and make instances of this class (venus, mars, earth.)
+
+2. Create a class Person.

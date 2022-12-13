@@ -1,0 +1,16 @@
+We can use a switch statement when we have multiple if-else nested. It makes much easier to read the code.
+The syntax for a switch statement is the following:
+
+switch(variable){
+	case 1: statement; break;
+	case 2: statement; break;
+	case n: statement; break;
+	default: statement; break;
+}
+
+Exercise. 
+1. Make a menu using a switch statement.
+	Option 1. Make a conversion from USD to MXN
+	Option 2. Make a conversion from MXN to USD
+	Option 3. Show menu again.
+	Option 4. Exit

@@ -1,0 +1,15 @@
+This concepts is too related with inheritance because we can use a method from the super class and modify it.
+
+That is, if we have a method in the super class, we can use the same method but with different parameters and different result.
+
+Example. 
+We can modify the toString method of the Object class. 
+
+public String toString(){
+	statement
+}
+
+Exercise. Create an Employee class that inherits from the Person class.
+Employee will have the following extra attributes: job_position, employer, salary; also it should have the toString() method with all the values.
+
+With the method super we can use the  attributes from the super class.
