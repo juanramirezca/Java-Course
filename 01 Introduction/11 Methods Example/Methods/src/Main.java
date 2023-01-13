@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,8 +11,8 @@ public class Main {
          */
 
         //Example 1. Printing a message twice
-        print_twice("Hello!");
-
+        print_twice("Hello, World!");
+        /*
         //Example 2. Say hello to someone
         say_name("Juan!");
 
@@ -17,16 +20,18 @@ public class Main {
         hello_three_times("Peter");
 
         //Example 4. Converting from celsius degrees to fahrenheit.
-        System.out.println(celsius_to_fahr(38.5));
+        double fahr = celsius_to_fahr(38.5);
+        System.out.println("Los grados fahr son " + fahr);
 
         //Example 5. Printing ten asterisks
         print_ten_asterisks();
 
         //Example 6. Adding two numbers
-        System.out.println(sumOfTwoNumbers(8, 7));
+        System.out.println(sumOfTwoNumbers(8, 10));
 
         //Example 7. Compute the maximum of three numbers
-        System.out.println(max_of_three(8, 10, 18));
+        System.out.println("The maximum value is: " + max_of_three(8, 10, 12));
+        */
 
         /**
          * 11.6 Function composition
@@ -34,12 +39,16 @@ public class Main {
          * That is, we can use the return value of a function as an
          * argument of another function.
          */
+        /*
         //Example 8. Function composition
-        max_of_three(sumOfTwoNumbers(8, 5), sumOfTwoNumbers(10, 5), 8);
+        System.out.println(max_of_three(sumOfTwoNumbers(8, 5), sumOfTwoNumbers(10, 5), 8));
+        max_of_three(13, 15,  8);
+        */
 
         /**
-         * 11.7 Exercises call of functions
+         * 11.7 Exercises. Calling functions
          */
+
 
     }
     /**
@@ -51,19 +60,17 @@ public class Main {
      *  3. Once you write and debug one, you can reuse it.
      *
      *  11.2 Functions
-     *  f(x) = x + 3
-     *
      *  A function is a set of instructions to perform a specific task.
-     *  The syntax of a function is the following
+     *  The syntax of a function is the following:
      *
      *  <Return type> <Name of the function> (Parameter(s) (optional)){
      *         Body of the function
      *  }
-     *  If we don't want to return any type, the keyword used is "void".
+     *  Notice: If we don't want to return any type, the keyword used is "void".
      */
 
     //Example 1. Printing a message twice
-    static void print_twice(String message){
+    public static void print_twice(String message){
         System.out.println(message);
         System.out.println(message);
     }
@@ -108,8 +115,8 @@ public class Main {
     }
 
     // Example 6. Adding two numbers
-    static int sumOfTwoNumbers(int firstNum, int secondNum){
-        int sum = firstNum + secondNum;
+    static int sumOfTwoNumbers(int x, int y){
+        int sum = x + y;
         return sum;
     }
 
@@ -126,6 +133,8 @@ public class Main {
         }
         return max_value;
     }
+
+
 /**
  *
  * 11.7 Exercises.
@@ -150,6 +159,8 @@ public class Main {
  7. Create a function to print any multiplication table between 1 and 12
 
  8. Make a function that computes the distance between two points in the Cartesian plane.
+ P1(x1,y1) P2(x2,y2)
+ p1(1, 4) p2(-1, -3)
  Formula: sqrt((x2 - x1)^2 + (y2 - y1)^2)
 
  9. Make a function that displays a menu with the following options:
@@ -161,6 +172,7 @@ public class Main {
 
  10. Make a function to compute the factorial of a number
  Example: factorial(5) = 5 * 4 * 3 * 2 * 1 = 120.
+ factorial(n) = 1 * 2 * 3 ... * n
 
 */
 

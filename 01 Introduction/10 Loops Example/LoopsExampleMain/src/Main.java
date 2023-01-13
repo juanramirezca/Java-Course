@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
         /**
          * 10.1 Loops in Java
          * Loops are used when we have repetitive tasks to be performed.
@@ -17,16 +17,17 @@ public class Main {
          *
          * 10.2 For statement
          * The first loop that we will see, and it is used to perform repetitive tasks.
-         * Usage: When we have a *fixed* amount of times
+         * Usage: When we have a *fixed* amount of times.
          *
-         * 10.2.1 The syntax of a for loop
-         * The syntax in For statement is the following
+         * 10.2.1 Syntax For statement
+         * The syntax in For statement is the following:
          *
          * for(initialization; condition; update){
          *      statement(s);
          * }
          *
          */
+
         /*
         //Example 1. Print the first ten natural numbers
         for(int i = 1; i <= 10; i++){
@@ -44,11 +45,8 @@ public class Main {
         }
 
         //Exercise 1. Print the first 100 first numbers backwards (100, 99, 98, ..., 1)
-        for(int i = 100; i > 0; i--){
-            System.out.println(i);
-            System.out.println(i);
-        }
-         */
+
+        */
 
         /**
          * 10.3 For-each statement
@@ -56,52 +54,40 @@ public class Main {
          * over elements on a sequence or list.
          * Usage: To iterate over elements in a list or sequence.
          *
-         * 10.3.1 The syntax of a for-each loop
+         * 10.3.1 Syntax For-each statement
          * The syntax to use a for-each loop is the following:
-         * for(iterator_variable : sequence){
+         *
+         * for(variable iterator : sequence){
          * 	statement(s)
          * }
          *
          * Notice: In the for-each loop, we are iterating over *elements* rather than indices.
          */
 
-
+        /*
         //Example 4. Print the total goals that your favorite soccer team scored
+
         int[] totalGoals = {43, 71, 28, 55, 51, 89, 55, 29};
 
-        /*
         for(int goal: totalGoals){
             System.out.println(goal);
         }
 
-
-
-        for(int ind = 0; ind < totalGoals.length; ind++){
-            System.out.println(totalGoals[ind]);
-        }
-
-
-
-        //Exercise 2. Given the previous array, print the index followed by the amount
-        // 0, 43, 1, 71, 2, 28, ..., 7, 29
-        // 0 - 43
-        // 1 - 71
-
-        // 7 - 29
-
-        for(int ind = 0; ind < totalGoals.length; ind++){
-            System.out.println(ind + " - " + totalGoals[ind]);
-        }
-
-         */
-
+        /*
+        Exercise 2. Given the previous array, print the index of the array followed by value of that index
+        Example:
+        0 - 43
+        1 - 71
+        ...
+        7 - 29
+        */
 
         /**
          * 10.4 The While statement
          * Another kind of loop that is similar to the for loop.
-         * Usage: When we don't know when the loop will end.
+         * Usage: When we do not know exactly when the loop will end.
          *
-         * 10.4.1. The syntax of a while loop
+         * 10.4.1. Syntax While statement
          *
          * variable to be evaluated in condition.
          * while(condition){
@@ -121,42 +107,32 @@ public class Main {
 
 
 
-        //Example 6. When user selects option 4
+        //Example 6. Selecting an option of a menu
         int option;
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Give me an option between 1 and 4");
-        option = scanner.nextInt();
+        option = sc.nextInt();
 
         while(option != 4){
             System.out.println("You chose option #" + option);
             System.out.println("Give me an option between 1 and 4");
-            option = scanner.nextInt();
+            option = sc.nextInt();
         }
 
 
 
-        //Exercise 3. Asking the user for their age
-
-        int age;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Age?: ");
-        age = scanner.nextInt();
-
-        while(age <= 18){
-            System.out.println("Your age is " + age);
-            System.out.println("Age?: ");
-            age = scanner.nextInt();
-        }
+        //Exercise 3. Asking the user for scores until a non-valid answer is given
 
          */
 
         /**
          * 10.5 Do-while statement
          * Similar to the While statement, but the main difference between a While and
-         * the Do-while is that the core in the Do-while is executed at least *once*.
+         * the Do-while is that the core in the Do-while is executed at least *once*,
+         * even if the condition is false.
          * Usage: For validation.
          *
-         * 10.5.1. The syntax of a Do-While
+         * 10.5.1. Syntax Do-While statement
          * do {
          * 	statement(s)
          * 	update of variable that meets condition
@@ -166,6 +142,7 @@ public class Main {
         //Example 7. Printing at least one time
 
         /*
+        System.out.println("Evaluating Do-While statement");
         int j = 6;
 
         do {
@@ -173,93 +150,92 @@ public class Main {
             j++;
         } while(j < 6);
 
+
+        System.out.println("Evaluating While statement");
         int i = 6;
         while(i < 6){
             System.out.println("The value of i is: " + i);
             i++;
         }
+        */
 
-        /**
-         * For. Cuando tenemos una cantidad fija de elementos. Imprimir los primeros 10 numeros
-         * For-each. Cuando tenemos una lista o secuencia. Imprimir elementos de mi lista.
-         * While. Cuando no sabemos cuando va a terminar nuestro programa. Juego.
-         * Do-while. Validacion. Preguntar al usuario por su password.
-         */
+        //Example 8. A password validation example
 
-
-
-        //Example 8. Validation
-        /*
-        int nip = 21;
+        String my_pass = "myPassword8";
+        String user_pass;
 
         do{
-            System.out.println(nip);
-            nip++;
-        } while(nip != 28);
+            System.out.println("Password: ");
+            user_pass = sc.next();
+        } while(!my_pass.equals(user_pass));
 
+        //Exercise 4. Ask the user for a nip and give him only three opportunities.
+
+
+        /**
+         * 10.6 Infinite Loops
+         * When we are using any kind of loop, we need to update the variable
+         * that is tested in the condition. Otherwise, we will have an infinite loop.
          */
 
-        //Exercise 4. Ask the user for a nip and give them only three opportunities. (9871)
-
-        int nip, opp;
-        opp = 3;
-        Scanner scanner = new Scanner(System.in);
         /*
-        do {
-            System.out.println("Digita tu nip");
-            nip = scanner.nextInt();
-            opp--;
-            System.out.println("Te quedan " + opp + " oportunidades");
-        }while(opp > 0 && nip != 9871);
+        //Example 9. Infinite loop using a while statement
+        int n = 0;
+        while(n < 10){
+            System.out.println(n);
+        }
+        */
 
-        //Cuando el while es True continua con las siguientes lineas
+        //Exercise 5. Modify the following code to make it work
 
+        int grade;
+        System.out.println("Give me your final grade");
+        grade = sc.nextInt();
 
-
-        System.out.println("Digita tu nip");
-        nip = scanner.nextInt();
-
-        while(opp > 0 && nip != 9871){
-            opp--;
-            System.out.println("Te quedan " + opp + " oportunidades");
-            System.out.println("Digita tu nip");
-            nip = scanner.nextInt();
-            //Entra siempre que se cumpla la condicion
+        while(grade > 0 || grade < 10){
+            System.out.println("Your final score is " + grade);
         }
 
-        if(nip == 9871){
-            System.out.println("Bienvenido a tu Banco");
-        } else{
-            System.out.println("Cuenta bloqueada. Intenta más tarde");
-        }
+        /**
+         * 10.7 Break and continue
+         * There is a keyword in Java called break, that help us to go out
+         * completely from a loop.
+         * Also, the keyword continue is present in Java, and let us continue
+         * with the next value of the loop.
+         */
 
+        //Example 10. Printing only half of loop
 
         for(int i = 1; i <= 10; i++){
             if(i == 5) break;
             System.out.println(i + " ");
         }
 
-
-
+        //Example 11. Printing valid scores only
         int calificacion;
-        calificacion = scanner.nextInt();
+        calificacion = sc.nextInt();
 
         while(true){
             if(calificacion < 0 || calificacion > 10) continue;
             System.out.println("Calificacion: " + calificacion);
-            calificacion = scanner.nextInt();
+            calificacion = sc.nextInt();
         }
 
-        for (int i = 0; i < 5; i ++){
-            for(int j = 5; j < 10; j++){
-                if(j == 7) break;
-                System.out.println(i + ", " + j);
-            }
-        }
-        */
-         for(int i = 1; i <= 20; i += 2){
-             System.out.println(i + " ");
-         }
+
+        /**
+         * 10.8 Nested loops
+         * Let us see an example that will help us understand the importance of
+         * a nested loop.
+         */
+
+
+
+
+
+
+
+
+
 
         /**
          * 2 x 1 = 2
@@ -314,11 +290,39 @@ public class Main {
          10. Make a "game" that determines if a user has guessed a number between 1 and 100.
          For this exercise we will follow the next steps:
 
-         a) A game that ask the user for a number and the game only responds whether you are right or not.
-         b) Give some hints to the user, so he can determine if the given number is greater or less than the number to guess.
-         c) Set the number to guess as a random number.
-         d) Give only 6 chances to the user to guess the number.
-         e) Si pierde, decirle cual era el numero que tenia que adivinar
+         1. The game should ask the gamer for a number and only respond whether he/she is right or not.
+         2. Some hints should be given to the user, so the gamer can determine if the given number is greater or less than the number to guess.
+         3. The number to guess should be a random number.
+         4. Give only 6 chances to the user to guess the number.
+         5. The user should be informed if he lost and what was the correct number.
+         */
+
+
+        /**
+         * EXTRA EXERCISES.
+         * 1. Print the following pyramids
+         * ****
+         * ***
+         * **
+         * *
+         *
+         * 2.
+         * *
+         * **
+         * ***
+         * ****
+         *
+         * 3.
+         *      *
+         *     **
+         *    ***
+         *   ****
+         *
+         *   4.
+         *   ****
+         *    ***
+         *     **
+         *      *
          */
     }
 }

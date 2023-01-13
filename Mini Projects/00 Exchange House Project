@@ -62,6 +62,15 @@ USD -> MXN
 
 # Place your code here. Use functions to separate the different actions in our code.
 
+amount = -189
+exchange_rate = -18.93
+
+if(amount < 0) ...
+1. Hacer n cantidad de conversiones (10 conversiones)
+2. No permitir que avanceme dé hasta que  valores que tengan sentido.
+
+
+
 
 ### 5. Modularize the code
 * This step must be performed only after completing the module "11 Methods".
